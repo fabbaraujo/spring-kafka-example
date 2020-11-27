@@ -40,7 +40,7 @@ public class HelloKafkaController {
         );
 
         latch.await(60, TimeUnit.SECONDS);
-        
+
         logger.info("All messages received");
 
         return "Hello Kafka!";
